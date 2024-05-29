@@ -226,6 +226,9 @@ header {
     font-size: 32px;
     text-transform: uppercase;
     font-family: "Asap";
+    max-width: 100%;
+    flex-wrap: wrap;
+    display: flex;
 }
 
 ._service_grover_grocery_content_wrap {
@@ -351,7 +354,8 @@ header {
 }
 
 ._header_grover_grocery_btn_wrap {
-    margin: 50px 0 20px 0;
+    margin: 50px auto 20px;
+    max-width: 720px;
 }
 /* end section 2 */
 ._feature_2_grover_grocery_wrapper {
@@ -436,6 +440,13 @@ header {
     margin: 30px 0 10px 0;
 }
 
+._feature_2_grover_grocery_wrap .container .row .right {
+    order: 2;
+}
+._feature_2_grover_grocery_wrap .container .row .left {
+    order: 1;
+}
+
 ._footer_grover_grocery_list_link,
 ._footer_grover_grocery_content_txt {
     font-family: "Roboto", sans-serif;
@@ -443,6 +454,13 @@ header {
     font-size: 16px;
     color: #676767;
     text-decoration: none;
+}
+
+.footerbottom
+    ._footer_grover_grocery_condition
+    ._footer_grover_grocery_condition_txt
+    ._footer_grover_grocery_list_link {
+    font-weight: 600;
 }
 
 ._footer_grover_grocery_list_link:hover {
@@ -455,7 +473,7 @@ header {
 
 .wrapfooterct {
     display: flex;
-    margin-top: 63px;
+    margin-top: 10px;
 }
 
 ._footer_grover_grocery_list_item {
@@ -481,4 +499,357 @@ header {
 
 ._footer_grover_grocery_condition {
     gap: 15px;
+}
+
+.bars {
+    display: none;
+}
+
+.wrapall1 {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-collaspe:first-child {
+    margin-right: 230px;
+}
+
+@media screen and (max-width: 992px) {
+    .row-sections4 {
+        background: #fef5f5;
+        padding: 50px 0;
+    }
+    .bars {
+        display: block;
+        border: 1px solid rgb(181, 180, 180);
+        padding: 4px 8px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar-option {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ._header_grover_grocery_wrap {
+        position: relative;
+        z-index: 1;
+        background: #fff;
+        padding-top: 40px;
+        top: -59px;
+        transform: translateY(0);
+        transition: transform 0.3s ease;
+    }
+
+    input:checked ~ .headerlogowrap ._header_grover_grocery_wrap {
+        transform: translateY(235px);
+    }
+
+    main,
+    footer {
+        transform: translateY(0);
+        transition: transform 0.3s ease;
+    }
+
+    input:checked ~ main {
+        transform: translateY(235px);
+    }
+    input:checked ~ footer {
+        transform: translateY(235px);
+    }
+
+    .wrapall1 {
+        position: absolute;
+        background: #fff;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 27%;
+        right: 31%;
+    }
+
+    .navbar-collaspe:first-child {
+        margin-right: 0;
+    }
+
+    .navbar-collaspe:last-child {
+        margin-top: 26px;
+    }
+
+    .headerlogowrap {
+        margin: 0 auto;
+        max-width: 720px;
+    }
+
+    ._service_grover_grocery_heading_title2 {
+        text-align: center;
+        max-width: 90%;
+        display: flex;
+        margin: 15px auto 0;
+    }
+
+    ._service_grover_grocery_content {
+        margin: 10px;
+        background-color: #fff;
+        border-radius: 12px;
+        padding: 30px 18px;
+        position: relative;
+        z-index: 2;
+        max-width: 220px;
+        height: auto;
+    }
+
+    ._service_grover_grocery_content_bg {
+        width: 210px;
+        height: 316px;
+    }
+
+    .row {
+        gap: 15px;
+    }
+
+    .row-navbar {
+        display: block;
+    }
+
+    .special {
+        margin-left: 0;
+    }
+
+    .row-sections2 {
+        display: block;
+    }
+
+    ._feature_grover_grocery_content_title2 {
+        max-width: 100%;
+    }
+
+    ._feature_2_grover_grocery_wrap .container .row {
+        display: block;
+    }
+
+    ._feature_grover_grocery_content {
+        margin: 20px 0 20px 0;
+    }
+
+    ._feature_grover_grocery_content_txt {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+
+    .row-sections4 {
+        display: block;
+    }
+
+    ._cta_grover_grocery_content_btn {
+        width: 100%;
+        margin: 60px AUTO;
+        max-width: 720px;
+        gap: 30px;
+        justify-content: flex-start;
+    }
+
+    .footercontainer,
+    .wrapfooterct {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul,
+    h4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerleft {
+        width: auto;
+    }
+
+    ._feature_grover_grocery_content_para {
+        font-size: 14px;
+        max-width: 100%;
+    }
+
+    .logowrap {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .headerlogowrap {
+        margin: 0 auto;
+        max-width: 540px;
+    }
+
+    ._feature_grover_grocery_content_txt {
+        max-width: 540px;
+        margin: 0 auto;
+    }
+
+    ._header_grover_grocery_content_txt {
+        text-align: center;
+        margin-top: 58px;
+    }
+
+    ._header_grover_grocery_content_top_txt {
+        margin: 0 auto;
+    }
+
+    ._header_grover_grocery_btn_wrap .row {
+        justify-content: space-between;
+        margin: 0 50px;
+    }
+
+    ._feature_grover_grocery_content {
+        max-width: 540px;
+        margin: 20px auto 0;
+    }
+
+    ._feature_grover_grocery_content_title,
+    ._feature_grover_grocery_content_title2,
+    ._feature_grover_grocery_content_para {
+        text-align: center;
+    }
+
+    ._feature_grover_grocery_content_para {
+        font-size: 16px;
+    }
+
+    ._cta_grover_grocery_content_btn {
+        justify-content: space-around;
+    }
+
+    ._service_grover_grocery_content_wrap .row-wrap .row {
+        display: block;
+    }
+
+    ._service_grover_grocery_content_bg {
+        width: 94%;
+        height: 99%;
+    }
+
+    ._service_grover_grocery_content {
+        width: 520px;
+        max-width: 540px;
+        margin-bottom: 50px;
+    }
+
+    ._service_grover_grocery_wrap {
+        margin: 0 auto;
+        max-width: 540px;
+    }
+
+    ._service_grover_grocery_heading_title2 {
+        max-width: 95%;
+    }
+
+    ._feature_grover_grocery_content_para {
+        max-width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    ._header_grover_grocery_btn_wrap {
+        display: flex;
+        justify-content: center;
+    }
+
+    ._footer_divider {
+        display: none;
+    }
+
+    .wrapall1 {
+        top: 27%;
+        right: 34%;
+    }
+
+    .footerbottom {
+        padding: 0 0 30px 0;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    ._footer_grover_grocery_copyright ._footer_grover_grocery_content_txt {
+        text-align: center;
+    }
+
+    ._footer_grover_grocery_condition {
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .md {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    /* ._service_grover_grocery_content_wrap .row-wrap div .row div {
+        padding: 0 15px;
+    } */
+
+    ._service_grover_grocery_content {
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    ._service_grover_grocery_content_bg {
+        width: 87%;
+        height: 99%;
+    }
+
+    .wrapall1 {
+        top: 27%;
+        right: 29%;
+    }
+
+    .headerlogowrap {
+        margin: 0 10px;
+    }
+
+    ._header_grover_grocery_content_title {
+        font-size: 38px;
+    }
+
+    ._header_grover_grocery_content_para,
+    ._feature_grover_grocery_content_para {
+        font-size: 16px;
+    }
+
+    ._feature_grover_grocery_content_title2 {
+        font-size: 36px;
+    }
+
+    ._footer_grover_grocery_content_txt {
+        text-align: center;
+    }
+
+    ._cta_grover_grocery_content_btn {
+        justify-content: center;
+        padding: 0 10px;
+    }
+
+    .md {
+        width: auto;
+    }
+
+    ._feature_grover_grocery_content_title {
+        font-size: 14px;
+    }
+
+    ._service_grover_grocery_wrapper {
+        padding: 100px 0px 10px;
+    }
+
+    ._feature_grover_grocery_content_title2_section4 {
+        font-size: 32px;
+    }
 }
